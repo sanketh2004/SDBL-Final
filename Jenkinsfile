@@ -33,7 +33,7 @@ pipeline {
 	      branch 'master'
 	   }
            steps {
-               sh "scp -i /home/ubuntu/cred/aws_key.pem -o 'StrictHostKeyChecking no' -r sbdl.zip log4j.properties sbdl_main.py sbdl_submit.sh conf ubuntu@3.86.198.125:/home/ubuntu/sbdl-prod"
+               sh "scp -i /home/ubuntu/cred/Sandy.pem -o 'StrictHostKeyChecking no' -r sbdl.zip log4j.properties sbdl_main.py sbdl_submit.sh conf ubuntu@3.86.198.125:/home/ubuntu/sbdl-prod"
            }
         }
     }
